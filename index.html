@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -239,7 +240,7 @@ table {
   <button class="tab-btn" data-tab="experience">Experience</button>
   <button class="tab-btn" data-tab="education">Education</button>
   <button class="tab-btn" data-tab="skills">Skills</button>
-  <button class="tab-btn" data-tab="projects">Projects</button>
+  <button class="tab-btn" data-tab="projects">Research & Publications</button>
   <button class="tab-btn" data-tab="resume">Resume</button>
   <button class="tab-btn" data-tab="contact">Contact</button>
 </div>
@@ -288,94 +289,156 @@ table {
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
-  <ul>
-  <li>Networks</li>
-<li>Full Stack Develpment</li>
-    <li>Front-End Development</li>
-    <li>Client-Server Computing</li>
-    <li>Visual Programming</li> 
-    <li>DBMS Tools</li>
-    <li>Cloud Computing</li>
-    <li> Web Development</li>
-    <li>Object-Oriented Programming</li>
-    <li>Python</li>
-    <li>Java</li>
-    <li>C++</li>
-    <li>JavaScript</li>
-  </ul>
-</section>
+  <!-- Add Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<section id="project">
-   <h2>Papers Published</h2>
-  <div class="publication-entry">
-  <h2>Publication Details: Mrs. M. Sweety Kiruba</h2>
+<style>
+  .skill-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  .skill-icons div {
+    background-color: #f0f0f5;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+  .skill-icons div:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa;
+  }
+  .skill-icons i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #00796b;
+  }
+</style>
 
-  <h3>1. Journal Publication</h3>
-  <p><strong>Journal Name:</strong> Fuzzy Systems and Soft Computing<br>
-  <strong>ISSN:</strong> 1819-4362 &nbsp; | &nbsp; <strong>Impact Factor:</strong> 6.35<br>
-  <strong>Volume:</strong> 19, No. 02(II), July–December 2024<br>
-  <strong>Type:</strong> Peer Reviewed, Biannual, Referred Journal</p>
-
-  <p><strong>Title of the Paper:</strong><br>
-  RECENT SURVEY ON OPTIMIZING 5G WIRELESS SENSOR NETWORKS WITH ADVANCED CLUSTERING AND DEEP BELIEF NETWORK ROUTING</p>
-
-  <p><strong>Authors:</strong><br>
-  Mrs. M. Sweety Kiruba, Research Scholar, Department of Computer Science, Park’s College (Autonomous), Tirupur.<br>
-  Dr. K. P. Rajesh, Professor & Dean, Department of Computer Science, Park’s College (Autonomous), Tirupur.</p>
-
-  <hr>
-
-  <h3>2. Conference Presentation</h3>
-  <p><strong>Title of the Paper:</strong><br>
-  ROUTING PROTOCOLS FOR ENERGY EFFICIENCY IN 5G SENSOR NETWORKS: A COMPATIVE EVALUTION OF DIRECTED DIFFUSION AND MPEG</p>
-
-  <p><strong>Authors:</strong><br>
-  Mrs. M. Sweety Kiruba, Research Scholar, Department of Computer Science, Park’s College (Autonomous), Tirupur, India<br>
-  Dr. K. P. Rajesh, Professor & Dean, Department of Computer Science, Park’s College (Autonomous), Tirupur, India</p>
-
-  <p><strong>Conference:</strong><br>
-  International Conference on “Recent Trends in Multi-Disciplinary Research and Innovation”<br>
-  Organized by A.V.P College of Arts and Science on 13th September, 2024.</p>
-
-  <hr>
-
-  <h3>3. Journal Publication</h3>
-  <p><strong>Journal Name:</strong> Journal of Neonatal Surgery<br>
-  <strong>ISSN (Online):</strong> 2226-0439<br>
-  <strong>Volume:</strong> 14, Issue 4s [2025]</p>
-
-  <p><strong>Title of the Paper:</strong><br>
-  ADVANCED HYBRID CLUSTERING AND ROUTING TECHNIQUES FOR ENHANCED ENERGY EFFICIENCY IN WIRELESS SENSOR NETWORKS</p>
-
-  <p><strong>Authors:</strong><br>
-  Mrs. M. Sweety Kiruba, Research Scholar, Department of Computer Science, Park’s College (Autonomous), Tirupur.<br>
-  Dr. K. P. Rajesh, Professor & Dean, Department of Computer Science, Park’s College (Autonomous), Tirupur.</p>
-
-  <p><strong>Journal Weblink:</strong><br>
-  <a href="https://www.jneonatalsurg.com" target="_blank">https://www.jneonatalsurg.com</a></p>
-
-  <p><strong>Research Publication Weblink:</strong><br>
-  <a href="https://www.jneonatalsurg.com/index.php/jns/article/view/1829/1762" target="_blank">https://www.jneonatalsurg.com/index.php/jns/article/view/1829/1762</a></p>
+<div>
+  <h2 style="text-align: center;">Skills</h2>
+  <div class="skill-icons">
+    <div><i class="fas fa-network-wired"></i><br>Networks</div>
+    <div><i class="fas fa-code"></i><br>Full Stack</div>
+    <div><i class="fas fa-laptop-code"></i><br>Front-End</div>
+    <div><i class="fas fa-server"></i><br>Client-Server</div>
+    <div><i class="fas fa-database"></i><br>DBMS Tools</div>
+    <div><i class="fab fa-python"></i><br>Python</div>
+    <div><i class="fab fa-java"></i><br>Java</div>
+    <div><i class="fas fa-cloud"></i><br>Cloud Computing</div>
+  </div>
 </div>
 
 </section>
 
-<section id="resume">
-  <h2>Resume</h2>
-  <a href="./Sweety_Kiruba_M.pdf" target="_blank" class="download-button">Download CV</a>
+<section id="projects">
+  <div class="academic-record">
+
+    <!-- Participations -->
+    <div style="background-color: #e8f0fe; color: #0b5394; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Participations</h2>
+      <ul>
+        <li>Attended 5-day NM FDP on <strong>“Fundamentals of Coding with Python”</strong> at Bharathiar University from <strong>01.07.2024 to 05.07.2024</strong>.</li>
+        <li>Participated in International Online Webinar titled <strong>“Publication Techniques for Research Scholar”</strong> at Al al-Bayt University, Jordan, organized by Public Relations Society of India, Chennai on <strong>13.12.2024</strong>.</li>
+      </ul>
+    </div>
+  
+    <!-- Conference Presentations -->
+    <div style="background-color: #e6ffe6; color: #21610B; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Conference Presentations</h2>
+  
+      <h3>1. Routing Protocols for Energy Efficiency in 5G Sensor Networks</h3>
+      <p><strong>Authors:</strong><br>
+      Mrs. M. Sweety Kiruba, Research Scholar, Department of Computer Science, Park’s College (Autonomous), Tirupur<br>
+      Dr. K. P. Rajesh, Professor & Dean, Department of Computer Science, Park’s College (Autonomous), Tirupur</p>
+      <p><strong>Conference:</strong> International Conference on “Recent Trends in Multi-Disciplinary Research and Innovation” held at A.V.P College of Arts and Science on 13th September, 2024.</p>
+  
+      <h3>2. Intrusion Detection Systems: A Comprehensive Review</h3>
+      <p><strong>Authors:</strong><br>
+      Mrs. M. Sweety Kiruba, Research Scholar, Department of Computer Science, Park’s College (Autonomous), Tirupur<br>
+      Dr. K. P. Rajesh, Professor & Dean, Department of Computer Science, Park’s College (Autonomous), Tirupur</p>
+      <p><strong>Conference:</strong> International Conference on “Impact of Digital Marketing in Indian Service Sectors” held on 22nd September, 2023 at RD National College of Arts and Science, Erode.</p>
+    </div>
+  
+    <!-- Journal Publications -->
+    <div style="background-color: #fff0f5; color: #8B0000; padding: 15px; border-radius: 8px;">
+      <h2>Journal Publications</h2>
+  
+      <h3>1. Recent Survey on Optimizing 5G Wireless Sensor Networks</h3>
+      <p><strong>Journal:</strong> Fuzzy Systems and Soft Computing (ISSN: 1819-4362, IF = 6.35)<br>
+      <strong>Volume:</strong> Vol.19, No. 02(II), July-December 2024</p>
+      <p><strong>Authors:</strong> Mrs. M. Sweety Kiruba and Dr. K. P. Rajesh</p>
+  
+      <h3>2. Advanced Hybrid Clustering and Routing Techniques</h3>
+      <p><strong>Journal:</strong> Journal of Neonatal Surgery (ISSN: 2226-0439)<br>
+      <strong>Volume:</strong> Vol.14, Issue 4s, 2025</p>
+      <p><strong>Authors:</strong> Mrs. M. Sweety Kiruba and Dr. K. P. Rajesh</p>
+      <p><strong>Journal Link:</strong> <a href="https://www.jneonatalsurg.com" target="_blank">www.jneonatalsurg.com</a><br>
+      <strong>Publication:</strong> <a href="https://www.jneonatalsurg.com/index.php/jns/article/view/1829/1762" target="_blank">Click to view</a></p>
+  
+      <h3>3. Recent Survey on Intrusion Detection System</h3>
+      <p><strong>Journal:</strong> Journal of the Asiatic Society of Mumbai (ISSN: 0972-0766)<br>
+      <strong>Volume:</strong> Vol. XCVI, No.31, 2023</p>
+      <p><strong>Authors:</strong> Mrs. M. Sweety Kiruba and Dr. K. P. Rajesh</p>
+      <p><strong>Journal Link:</strong> <a href="https://www.asiaticsociety.org.in/journal/" target="_blank">www.asiaticsociety.org.in</a><br>
+      <strong>Publication:</strong> <a href="https://drive.google.com/file/d/1nwiKyeIvDLtm12QZ7CrTWheaH403YZ0I/view?usp=drive_link" target="_blank">Click to view</a></p>
+    </div>
+  
+  </div>
+  
 </section>
 
+<section id="resume">
+  <h2>Resume</h2>
+  <button onclick="checkdownload()">Download CV</button>
+</section>
+
+<script>
+  function checkdownload() {
+    const password = prompt("Enter password to download CV");
+    if (password === "1234") {
+      window.open("./Sweety_Kiruba_M.pdf", "_blank");
+    } else {
+      alert("Incorrect password. Access denied.");
+    }
+  }
+</script>
+
+
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:vignesh@example.com">sweetykirubam@gmail.com</a></p>
-  <p>Phone: +91-7010613480</p>
-  <p>Location: Erode, TamilNadu, India</p>
+ <!-- Include Font Awesome (add this in the <head> of your HTML if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oLfjK+jN2Q4aSTzP5xAhwD6TNUtMbvI+P7KDYFL6iD2kL8cNiMfA+7RvHfTj6MykqXHv7Qzz8k35SkzgS0GwRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Contact Section -->
+<h2>Contact</h2>
+<!-- <p>📧 Email: <a href="mailto:sweetykirubam@gmail.com">sweetykirubam@gmail.com</a></p>
+<p>💬 WhatsApp: <a href="https://wa.me/917010613480" target="_blank">+91-7010613480</a></p>
+<p>📍 Location: Erode, Tamil Nadu, India</p>
+-->
+<p>
+  <i class="fas fa-envelope" style="color: #d44638; margin-right: 8px;"></i>
+  Email: <a href="mailto:sweetykirubam@gmail.com">sweetykirubam@gmail.com</a>
+</p>
+<p>
+  <i class="fab fa-whatsapp" style="color: #25d366; margin-right: 8px;"></i>
+  WhatsApp: <a href="https://wa.me/917010613480" target="_blank">+91-7010613480</a>
+</p>
+<p>
+  <i class="fas fa-map-marker-alt" style="color: #e74c3c; margin-right: 8px;"></i>
+  Location: Erode, Tamil Nadu, India
+</p>
+
   <div style="margin-top: 1rem;">
-    <a href="https://linkedin.com/in/sweety" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/sweety" target="_blank">GitHub</a> |
-    <a href="https://twitter.com/sweety" target="_blank">Twitter</a> |
-    <a href="https://instagram.com/sweety`" target="_blank">Instagram</a>
+    <a href="https://github.com/sweetykiruba" target="_blank">GitHub</a> 
+   
+    <!--<a href="https://linkedin.com/in/sweety" target="_blank">LinkedIn</a> |
+     <a href="https://twitter.com/sweety" target="_blank">Twitter</a> |
+    <a href="https://instagram.com/sweety`" target="_blank">Instagram</a> -->
   </div>
 </section>
 
@@ -389,7 +452,7 @@ table {
       <p>Fundamentals of Web Development - IBM</p>
     </div>
     <div style="text-align: center;">
-      <a href="https://example.com/certificate2" target="_blank">
+      <a href="https://skills.yourlearning.ibm.com/certificate/MDL-301" target="_blank">
         <img src="cloudIBM1.jpeg" alt="" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
       </a>
       <p>Cloud Computing - IBM</p>
@@ -481,7 +544,15 @@ table {
     errorMsg.textContent = '';
     passwordInput.focus();
   }
-
+  
+  function checkdownload() {
+    const password = prompt("Enter password to download:");
+    if (password === "1234") {
+      window.open("./Sweety_Kiruba_M.pdf", "_blank");
+    } else {
+      alert("Incorrect password. Access denied.");
+    }
+  }
   function checkPassword() {
     if (passwordInput.value === correctPassword) {
       modal.style.display = 'none';
